@@ -27,7 +27,7 @@ export default{
 				pagination: {
 				    el: '.swiper-pagination'
 				}
-	        }
+      }
 		}
 	}
 }	

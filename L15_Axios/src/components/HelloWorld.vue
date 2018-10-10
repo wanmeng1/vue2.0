@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-
     <div>
       <ul>
         <li v-for="news in newsData">
@@ -21,16 +20,24 @@ export default {
       newsData:[]
     }
   },
+  // created(){
+  //   this.$axios("http://www.wwtliu.com/sxtstu/news/juhenews.php?type=junshi&count=30")
+  //     .then(res=>{
+  //       console.log(res.data)
+  //     }).catch(error=>{
+  //       console.log(error)
+  //   })
+  // }
   created(){
-    this.$axios("/sxtstu/news/juhenews.php",{
+    this.$axios("http://www.wwtliu.com/sxtstu/news/juhenews.php",{
       params:{
         type:"junshi",
         count:30
       }
     })
     .then(res => {
-      this.newsData = res.data;
-      console.log(res.data);
+      this.newsData = res.data.result.data;
+      // console.log(res);
     })
     .catch(error => {
       console.log(error);

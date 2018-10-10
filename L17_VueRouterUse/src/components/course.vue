@@ -11,9 +11,9 @@
 		</div>
 		<div class="right">
 			<!-- 视图区域 -->
-			<transition name='fade'>
+			<!--<transition name='fade'>-->
 			  <router-view></router-view>
-			</transition>
+			<!--</transition>-->
 		</div>
 	</div>
 </template>

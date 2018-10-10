@@ -43,6 +43,9 @@ Axios
 	5.拦截器
 
 	6.跨域处理：
+
+	  npm install --save-dev express mysql
+
 		修改config index.js文件
 			proxyTable: {
 	            "/api": {
@@ -53,7 +56,7 @@ Axios
 	                }
 	            }
 	        }
-	    添加host
+	    main.js添加host
 	    	Vue.prototype.HOST = '/api'
 	    注意：此种跨域解决方案，只能适用于测试阶段，打包的时候，不会具备服务器
 	          不能跨域了，后端解决。

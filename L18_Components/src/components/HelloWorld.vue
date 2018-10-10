@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <el-carousel>
+      <!--<el-carousel-item v-for="(item,index) in 4" :key="index">-->
+        <!--{{ item}}-->
+      <!--</el-carousel-item>-->
       <el-carousel-item v-for="(img,index) in imgs" :key="index">
         <img :src="img" alt="">
       </el-carousel-item>

@@ -32,6 +32,7 @@ export default{
 	created(){
 		this.$axios.get("http://www.wwtliu.com/sxtstu/blueberrypai/getIndexBanner.php")
 		.then(res => {
+		  console.log(res)
 			this.banners = res.data.banner;
 		})
 		.catch(error => {

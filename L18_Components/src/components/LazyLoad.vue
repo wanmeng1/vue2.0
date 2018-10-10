@@ -15,14 +15,17 @@ export default{
 		        src: "http://www.wwtliu.com/sxtstu/blueberrypai/indexImg/banner1.jpg",
 		        error: require("../assets/error.jpg"),
 		        loading: require("../assets/loadding.jpg")
-		    },
-		    imgUrl:"http://www.wwtliu.com/sxtstu/blueberrypai/indexImg/banner2.jpg"
+      },
+      imgUrl:"http://www.wwtliu.com/sxtstu/blueberrypai/indexImg/banner2.jpg"
 		}
 	}
 }	
 
 </script>
 <style>
-
+  img{
+    width: 500px;
+    height: 400px;
+  }
 
 </style>

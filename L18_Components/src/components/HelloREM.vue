@@ -23,9 +23,9 @@ export default{
 <style scoped lang="less">
 
 
-// 200*300
+// 200px*300px
 .box{
-	width: 200 / 50rem;
+	width: 200 / 50rem; //
 	height: 300 / 50rem;
 	background: red;
 	font-size: 16 / 50rem;

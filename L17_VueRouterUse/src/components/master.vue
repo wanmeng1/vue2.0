@@ -1,6 +1,7 @@
 <template>
 	<div>
 		专家:{{ $route.params.count }}
+    <br>
 		{{ $route.path }}
 	</div>
 </template>
